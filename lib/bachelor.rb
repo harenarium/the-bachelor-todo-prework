@@ -11,7 +11,7 @@ end
 def get_contestant_name(data, occupation)
   name = ""
   data.each{|season,a|
-    season.each {|hash_in_a|
+    a.each {|hash_in_a|
       if hash_in_a["occupation"]==occupation
         name = hash_in_a["name"]
       end
