@@ -51,6 +51,5 @@ def get_average_age_for_season(data, season)
     age_sum += hash_in_a["age"].to_f
     counter += 1
   }
-  binding.pry
   (age_sum/counter).round
 end
