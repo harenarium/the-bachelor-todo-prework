@@ -1,3 +1,4 @@
+require "pry"
 def get_first_name_of_season_winner(data, season)
   name = ""
   data[season].each {|hash_in_a|
@@ -43,6 +44,7 @@ def get_occupation(data, hometown)
 end
 
 def get_average_age_for_season(data, season)
+  binding.pry
   age_sum = 0
   counter = 0
   data.each{|season,a|
