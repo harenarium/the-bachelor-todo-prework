@@ -47,11 +47,9 @@ def get_average_age_for_season(data, season)
 
   age_sum = 0
   counter = 0
-  data.each{|season,a|
-    a.each {|hash_in_a|
-      age_sum += hash_in_a["age"].to_f
-      counter += 1
-    }
+  data[season].each {|hash_in_a|
+    age_sum += hash_in_a["age"].to_f
+    counter += 1
   }
   binding.pry
   (age_sum/counter).round
